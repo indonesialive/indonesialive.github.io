@@ -13,3 +13,5 @@ body {margin-top: 0;}
 #navbar {position: fixed;width: 100%;display: flex;align-items: center;justify-content: space-between;background-color: rgb(225, 225, 225);height: 12.96vh;border-radius: 0px 0px 35px 35px;}
 #welcome-text {padding-left: 8vw;font-family: calibri;font-size: 4vw;}
 #nusantaralivelogo {width: auto;height: auto;max height: 8px;align-items: end;padding-right: 8vw;height: 4vh;}
+#button-container{height: 50px;background-color: aquamarine;display: flex;align-items: center;justify-content: center;gap: 50px;}
+#button {height: 40px;background-color: white;align-content: center;border-radius: 10px;}
