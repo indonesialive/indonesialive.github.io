@@ -3,7 +3,7 @@
 int sum(int value)
 {
     if (value == 0)
-        return;
+        return 0;
     return value + sum(value - 1);
 }
 

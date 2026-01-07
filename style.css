@@ -13,6 +13,7 @@ body {margin-top: 0;}
 #navbar {position: fixed;width: 100%;display: flex;align-items: center;justify-content: space-between;background-color: rgb(225, 225, 225);height: 12.96vh;border-radius: 0px 0px 35px 35px;}
 #welcome-text {padding-left: 8vw;font-family: calibri;font-size: 4vw;}
 #nusantaralivelogo {width: auto;height: auto;max height: 8px;align-items: end;padding-right: 8vw;height: 4vh;}
+.button-container-header{height: 25px;width: 300px;border-radius: 5px;background-color: rgb(177, 255, 229);display: flex;align-items: center;justify-content: center;gap: 50px;margin: auto;}
 #button-container{height: 50px;width: 300px;border-radius: 10px;background-color: aquamarine;display: flex;align-items: center;justify-content: center;gap: 50px;margin: auto;}
 .button {height: 40px;width: 80px;text-align: center;background-color: rgb(0, 222, 196);align-content: center;border-radius: 10px;color: inherit;text-decoration: none;}
 .button:hover{opacity: 80%;}
