@@ -8,6 +8,6 @@ void greet(char name[])
 int main()
 {
     greet("Amin");
-    greet("Callistya");
+    greet("Budi");
     return 0;
 }
