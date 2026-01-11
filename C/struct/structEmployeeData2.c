@@ -18,51 +18,74 @@ int main()
 
         {"A1101",
          "AMIN NUR MUIS",
-         "Tokyo, Japan",
+         "TOKYO, JAPAN",
          "081234567891",
-         "Software Engineer",
+         "SOFTWARE ENGINEER",
          "D1",
          0},
         {"A1102",
          "CALLYSTA ASYIVA NIZA AULIA TSAQIB",
-         "New York, USA",
+         "NEW YORK, USA",
          "081234567892",
-         "Web Developer",
+         "WEB DEVELOPER",
          "D2",
          0},
         {"A1103",
          "FAJRI IRWANDA",
-         "London, UK",
+         "LONDON, UK",
          "081234567893",
-         "UI Designer",
+         "UI DESIGNER",
          "D3",
          0},
         {"A1104",
          "MUHAMMAD DAFFA ADILLAH",
-         "Seoul, South Korea",
+         "SEOUL, SOUTH KOREA",
          "081234567894",
-         "UX Designer",
+         "UX DESIGNER",
          "D3",
          0},
 
     };
     struct dataPegawai hasil;
-    char inputNip[6];
+    char inputnip[6];
+    char inputnama[41];
+    char inputalamat[51];
+    char inputnomorTelepon[16];
+    char inputjabatan[20];
+    char inputgolongan[3];
     int ditemukan = 0;
 
-    printf(">>>  Program Pencarian Data Karyawan  <<<\n");
+    printf(">>>  Program Pencarian Data Pegawai  <<<\n");
     printf("\n");
-    printf("Masukkan kode NIP karyawan: ");
-    scanf("%s", inputNip);
+    printf("Masukkan data berikut, PASTIKAN INPUT KARAKTER MENGGUNAKAN HURUF KAPITAL!: \n");
+    printf("Masukkan kode NIP: \n");
+    scanf("%s", inputnip);
+    printf("Masukkan nama lengkap: \n");
+    scanf(" %[^\n]", inputnama);
+    printf("Masukkan alamat (kota, negara): \n");
+    scanf(" %[^\n]", inputalamat);
+    printf("Masukkan nomor telepon(diawali dengan 08): \n");
+    scanf("%s", inputnomorTelepon);
+    printf("Masukkan jabatan: \n");
+    scanf(" %[^\n]", inputjabatan);
+    printf("Masukkan golongan: \n");
+    scanf("%s", inputgolongan);
 
     for (int i = 0; i < 4; i++)
 
-        if (strcmp(inputNip, listEmployee[i].nip) == 0)
+    {
+        if (strcmp(inputnip, listEmployee[i].nip) == 0 &&
+            strcmp(inputnama, listEmployee[i].nama) == 0 &&
+            strcmp(inputalamat, listEmployee[i].alamat) == 0 &&
+            strcmp(inputnomorTelepon, listEmployee[i].nomorTelepon) == 0 &&
+            strcmp(inputjabatan, listEmployee[i].jabatan) == 0 &&
+            strcmp(inputgolongan, listEmployee[i].golongan) == 0)
         {
             hasil = listEmployee[i];
             ditemukan = 1;
             break;
         }
+    }
 
     if (strcmp(hasil.golongan, "D1") == 0)
         hasil.gajiPokok = 3000000;
