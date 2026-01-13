@@ -1,1 +1,0 @@
-int changedValues = 15;
