@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <string.h>
 
 struct studentData
 {
@@ -8,18 +7,19 @@ struct studentData
     int umur;
 };
 
-int main()
+void main()
 {
     struct studentData list[3] =
-        {{"1000", "Joko Widodo", 50},
-         {"1001", "Prabowo Subianto", 70},
-         {"1002", "Gibran Rakabuming", 30}};
+        {{"1000", "Taufik Hidayat", 21},
+         {"1001", "Susi Susanti", 22},
+         {"1002", "Tommy Sugiarto", 20}};
+
+    printf(">>>DATABASE MAHASISWA<<<\n\n");
 
     for (int i = 0; i < 3; i++)
     {
-        printf("NIM: %s\n", list[i].nim);
+        printf("%d.\nNIM: %s\n", i + 1, list[i].nim);
         printf("Nama: %s\n", list[i].nama);
-        printf("Umur: %d\n", list[i].umur);
+        printf("Umur: %d tahun\n\n", list[i].umur);
     }
-    return 0;
 }
