@@ -89,12 +89,18 @@ void deleteData()
             fprintf(tempptr, " %s|%d|%s\n", a.name, a.age, a.regId);
     }
     if (found != 1)
+    {
+        fclose(fptr);
         printf("Nomor registrasi belum terdata. \n\n");
-    fclose(fptr);
-    fclose(tempptr);
+    }
 
-    remove("studentData.txt");
-    rename("temp.txt", "studentData.txt");
+    else
+    {
+        fclose(fptr);
+        fclose(tempptr);
+        remove("studentData.txt");
+        rename("temp.txt", "studentData.txt");
+    }
 }
 
 int main(void)
