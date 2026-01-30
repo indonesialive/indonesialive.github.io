@@ -1,31 +1,41 @@
 #include <stdio.h>
 
-int main(void)
+int binarySearch(int value[], int n, int key) // function declaration
 {
-    int list[10] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
-    int low = 0, high = 9;
+
+    int low = 0, high = n - 1;
     int mid;
-    int key;
-    int found = 0;
 
-    printf("input a number: ");
-    scanf("%d", &key);
-
+    // binary search algorithm
     while (low <= high)
     {
         mid = low + (high - low) / 2;
 
-        if (list[mid] == key)
+        if (value[mid] == key)
         {
-            printf("data detected on index %d", mid);
-            found = 1;
-            break;
+            return mid;
         }
-        else if (key < list[mid])
+        else if (key < value[mid])
             high = mid - 1;
-        else if (key > list[mid])
+        else if (key > value[mid])
             low = mid + 1;
     }
-    if (!found)
-        printf("data not found");
+    return -1;
+}
+
+int main(void) // main function
+{
+    int value[] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10}; // assiign array's value
+    int n = sizeof(value) / sizeof value[0];       // assign number of value
+    int key;
+    int i;
+
+    printf("input a number: ");
+    scanf("%d", &key);               // input search keyword
+    i = binarySearch(value, n, key); // call binary search function
+    // output search result
+    if (i != -1)
+        printf("data detected on index %d", i);
+    else
+        printf("data not found\n");
 }
