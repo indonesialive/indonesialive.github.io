@@ -13,7 +13,8 @@ int main()
     int num3 = 32768;
     printf("%d\n", num3);
     // Given the declaration double dbl_num = 123.456;, write a program that prints out the value of dbl_num in both floating-point and scientific notation formats.
-
+    double dbl_num = 123.456;
+    printf("%f, %e", dbl_num, dbl_num);
     // Write a program that can print out the numeric value of the newline character (\n). (Hint: assign `\n' to a character variable.)
     char newline = '\n';
     printf("%d\n", newline);
