@@ -1,3 +1,0 @@
-BK001|Laskar Pelangi|Novel|50000.00
-BK002|Pulang|Novel|45000.00
-BK003|Pergi|Novel|65000.00
