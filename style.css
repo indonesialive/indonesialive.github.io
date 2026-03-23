@@ -5,7 +5,7 @@ body {margin-top: 0;}
 #socialmediabutton a {display: flex;}
 #socialmediabutton img {height: 20px;}
 #socialmediabutton p {font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;color: white;padding-left: 10px;}
-#content {padding: 12.96vh 20px 0 20px;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;}
+#content {padding: 12.96vh 20px 0 20px;font-family: 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;}
 #link-sept {text-decoration: none;color: inherit;cursor: pointer;}
 #sept {display: flex;align-items: flex-start;background-color: rgb(190, 251, 255);border-radius: 35px;margin: 5px 0 0 0;padding: 20px;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;}
 #text-video h3{margin: 0 0 4px 10px;white-space: ; }
