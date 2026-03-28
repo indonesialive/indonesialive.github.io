@@ -67,7 +67,7 @@ body{
 #nid-wm {
   display: flex;
   position: fixed;
-  width: 160px;
+  width: 25%;
   bottom: 10px;
   left: 50%;
   transform: translateX(-50%)
