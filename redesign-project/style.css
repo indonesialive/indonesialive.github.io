@@ -38,15 +38,30 @@ body{
 
 
 
-.menu a {
+.menu {
+  display: flex;
   color: rgb(0, 0, 0);
   margin-right: 15px;
   text-decoration: none;
 }
 
-.menu button {
+/* .menu button {
   padding: 6px 12px;
   cursor: pointer;
+} */
+
+.nav-button {
+  color: black;
+  height: 40px;
+  background-color: rgb(255, 255, 255);
+  padding: 0 20px;
+  align-content: center;
+  border-radius: 14px;
+  text-decoration: none;
+}
+
+.nav-button:hover {
+  background-color: rgba(0, 0, 0, 0.123);
 }
 
 .content {
