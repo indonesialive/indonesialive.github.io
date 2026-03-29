@@ -44,3 +44,18 @@ setInterval(() => {
   greetingEl.style.opacity = 1;
 }, 300);
 }, 1500);
+
+// show/hide side panel
+
+const menuButton = document.getElementById("menu-button");
+const closeButton = document.getElementById("closeBtn");
+const sidePanel = document.getElementById("sidePanel");
+
+menuButton.addEventListener("click", () => {
+  sidePanel.classList.add("active");
+});
+
+closeButton.addEventListener("click", () => {
+  sidePanel.classList.remove("active");
+});
+``

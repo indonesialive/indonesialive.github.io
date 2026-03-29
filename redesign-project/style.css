@@ -30,7 +30,8 @@ body{
   z-index: 999;
 }
 
-
+button.menu-button {
+    display: none;}
 
 #navbar.hide {
   transform: translateY(-100%);
@@ -88,4 +89,70 @@ body{
 
 .content {
   padding: 20px;
+}
+
+@media (max-width: 768px) {
+  
+div.menu {
+    display: none;
+  }
+
+  /* Tampilkan hamburger */
+  button.menu-button {
+    display: block;
+  }
+
+}
+
+.nav-button-desktop{
+  color: #003a6a;
+  height: 40px;
+  background-color: rgb(255, 255, 255);
+  padding: 0 20px;
+  align-content: center;
+  border-radius: 14px;
+  text-decoration: none;
+}
+
+.nav-button-desktop:hover {
+  background-color: rgb(58, 225, 255);
+}
+
+.side-panel {
+  position: fixed;
+  top: 0;
+  right: -30%; /* sembunyi */
+  width: 30%;
+  height: 100vh;
+  background: #003a6a;
+
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  gap: 16px;
+
+  transition: right 0.5s ease;
+  z-index: 2000;
+}
+
+.side-panel a {
+  color: #003a6a;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+
+
+/* Saat aktif */
+.side-panel.active {
+  right: 0;
+}
+
+.close-btn {
+  align-self: flex-end;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 26px;
+  cursor: pointer;
 }
