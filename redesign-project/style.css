@@ -73,6 +73,19 @@ body{
   transform: translateX(-50%)
 }
 
+#greeting {
+  transition: opacity 0.3s ease;
+}
+
+#greetings{
+  display: flex;
+  margin: 20px;
+  font-family: Arial, 
+  Helvetica, sans-serif; 
+  font-size: 30px; 
+  font-style: normal;
+}
+
 .content {
   padding: 20px;
 }
