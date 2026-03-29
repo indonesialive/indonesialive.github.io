@@ -71,7 +71,8 @@ button.menu-button {
   width: 25%;
   bottom: 10px;
   left: 50%;
-  transform: translateX(-50%)
+  transform: translateX(-50%);
+  z-index: 3000
 }
 
 #greeting {
