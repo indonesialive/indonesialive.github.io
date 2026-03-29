@@ -121,8 +121,8 @@ div.menu {
 .side-panel {
   position: fixed;
   top: 0;
-  right: -30%; /* sembunyi */
-  width: 30%;
+  right: -50%; /* sembunyi */
+  width: 50%;
   height: 100vh;
   background: #003a6a;
 
