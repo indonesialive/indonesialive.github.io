@@ -59,3 +59,34 @@ closeButton.addEventListener("click", () => {
   sidePanel.classList.remove("active");
 });
 ``
+
+  // 🟢 SET GO LIVE TIME (WIB)
+  const goLiveTime = new Date('2026-04-01T00:00:00').getTime();
+
+  function updateCounter() {
+    const now = Date.now();
+    let diffSeconds = Math.floor((now - goLiveTime) / 1000);
+
+    if (diffSeconds < 0) {
+      document.getElementById('live-counter').innerText = 'Not live yet';
+      return;
+    }
+
+    const days = Math.floor(diffSeconds / 86400);
+    diffSeconds %= 86400;
+
+    const hours = Math.floor(diffSeconds / 3600);
+    diffSeconds %= 3600;
+
+    const minutes = Math.floor(diffSeconds / 60);
+    const seconds = diffSeconds % 60;
+
+    document.getElementById('live-counter').innerText =
+      `This website is now running ${days} days ${String(hours).padStart(2, '0')} hours ` +
+      `${String(minutes).padStart(2, '0')} minutes ` +
+      `${String(seconds).padStart(2, '0')} seconds`;
+  }
+
+  // Update rutin
+  setInterval(updateCounter, 1000);
+  updateCounter(); // render awal
