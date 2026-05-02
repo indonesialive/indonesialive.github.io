@@ -129,13 +129,13 @@ div.menu {
   }
 
   .page-bg{
-    height: 100lvh;
+    height: 120vh;
     background-image: url(./public/background-mobile.png);
     position: fixed;
+    top: -1vh;
     background-size: cover;
-    background-attachment: fixed;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: top,center;
     z-index: -1;
     inset: 0;
 }
