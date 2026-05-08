@@ -12,7 +12,6 @@ body{
 }
 
 
-
 #navbar {
   position: fixed;
   top: 0;
@@ -99,6 +98,15 @@ button.menu-button {
   color: white;
   background-color: rgb(0, 79, 163);
 }
+
+.greeting{
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;}
+
 
 #greeting {
   transition: opacity 0.3s ease;
