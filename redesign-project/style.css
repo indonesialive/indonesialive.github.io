@@ -117,9 +117,24 @@ button.menu-button {
   margin: 20px;
   font-family: Arial, 
   Helvetica, sans-serif; 
-  font-size: 30px; 
+  font-size: 35px; 
   font-style: normal;
 }
+
+#social-box {
+  background: rgba(255, 255, 255, 0.18);
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(10px);
+  display: flex;
+  width: fit-content;
+  padding: 5px;
+  border-radius: 14px;
+  gap: 4px;
+  box-shadow: inset;
+  border: 1.5px solid rgba(255, 255, 255, 0.350);
+}
+
+.social-icon {display: flex;}
 
 .content {
   padding: 20px;
